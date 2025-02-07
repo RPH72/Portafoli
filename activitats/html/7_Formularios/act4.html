@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulario búsqueda cámaras</legend>
+            <label>Marca 
+                <select name="marca">
+                    <option value="0">Pentax</option>
+                    <option value="1">Canon</option>
+                    <option value="2">Nikon</option>
+                    <option value="3">Sony</option>
+                    <option value="4">Fujifilm</option>
+                    <option value="5">Panasonic</option>
+                    <option value="6">Olympus</option>
+                    <option value="7">Sigma</option>
+                    <option value="8">Leica</option>
+                </select></label><br><br>
+            <label>Modelo <input type="text" name="modelo"></label><br><br>
+            <label>Precio <input type="number" name="precio" min="0"></label><br><br>
+            <button type="submit">Buscar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
