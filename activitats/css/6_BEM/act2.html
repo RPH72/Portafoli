@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: azure;
+            border-bottom: 2px solid #ddd;
+        }
+        .img {
+            height: 50px;
+        }
+        .nav__list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .nav__link {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .form__input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form__button {
+            padding: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+        .comentarios {
+            margin: 20px;
+        }
+        .comentario {
+            border-bottom: 1px solid #ddd;
+        }
+        .comentario__autor {
+            font-weight: bold;
+        }
+        .comentario__texto {
+            margin: 5px 0;
+        }
+        .comentario__form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .comentario__form__input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+        .comentario__form__button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 10%;
+            text-align: center;
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img class="img" src="img/logo.png" alt="Logo">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li>
+                    <a href="#" class="nav__link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">Contacto</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">Perfil</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="form">
+            <input type="text" class="form__input" name="Buscar" placeholder="Buscar...">
+            <button type="submit" class="form__button">Buscar</button>
+        </form>
+    </header>
+    <section class="comentarios">
+        <h2>Comentarios</h2>
+        <div class="comentario">
+            <p class="comentario__autor">Usuario 1</p>
+            <p class="comentario__texto">Este es un comentario de ejemplo.</p>
+        </div>
+        <div class="comentario">
+            <p class="comentario__autor">Usuario 2</p>
+            <p class="comentario__texto">Otro comentario interesante.</p>
+        </div>
+        <form class="comentario__form">
+            <input type="text" class="comentario__form__input" placeholder="Escribe un comentario...">
+            <button type="submit" class="comentario__form__button">Comentar</button>
+        </form>
+    </section>
+</body>
+</html>
