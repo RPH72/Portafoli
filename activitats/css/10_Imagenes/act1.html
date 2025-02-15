@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chat {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: solid black 1px;
+        }
+        .mensaje {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .emisor {
+            justify-content: start;
+        }
+        .remitente {
+            justify-content: end;
+            text-align: right;
+        }
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .remitente .avatar {
+            order: 1;
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        .contenido {
+            color: white;
+            background: #3264a1;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 70%;
+        }
+        .remitente .contenido {
+            background: #4caf50;
+        }
+        .nombre {
+            font-size: 1rem;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+        .fecha {
+            font-size: 0.5rem;
+            color: gray;
+            padding-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="mensaje emisor">
+            <img class="avatar" src="img/ramon.png" alt="Avatar emisor">
+            <div>
+                <div class="nombre">Ramon Gonzalez</div>
+                <div class="contenido">Felicidades!</div>
+                <div class="fecha">20 Agosto 2024, 8:47</div>
+            </div>
+        </div>
+        <div class="mensaje remitente">
+            <div>
+                <div class="nombre">Sergi Pla</div>
+                <div class="contenido">Gracias!</div>
+                <div class="fecha">20 Agosto 2024, 14:23</div>
+            </div>
+            <img class="avatar" src="img/sergi.png" alt="Avatar remitente">
+        </div>
+    </div>
+</body>
+</html>
