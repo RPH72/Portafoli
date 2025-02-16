@@ -6,17 +6,104 @@
     <title>Document</title>
     <style>
         body {
-            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .principal {
+            background-image: url(img/portada.jpg);
+            background-size: cover;
+            background-position: top;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 60vh;
+        }
+        .detalles {
+            background-color: #ff5645;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40vh;
+        }
+        .mas {
+            background-color: #ff5645;
+            color: white;
+            font-weight: bold;
+            border-radius: 3rem;
+            padding: 0.8rem 1.5rem;
+            border: transparent;
+            margin-top: 20px;
+            &:hover {
+                background-color: rgb(255, 57, 39);
+                cursor: pointer;
+            }
+        }
+        .empezar {
+            background-color: white;
+            color: black;
+            font-weight: bolder;
+            border-radius: 3rem;
+            padding: 0.8rem 1.5rem;
+            border: transparent;
+            &:hover {
+                background-color: rgb(225, 225, 225);
+                cursor: pointer;
+            }
+        }
+
+        h1 {
+            font-size: xx-large;
+            width: 60%;
+        }
+
+        hr {
+            width: 50px;
+            height: 3px;
+            background-color: white;
+            border: none;
+            margin: 5px;
+        }
+
+        .principal__hr {
+            background-color: #ff5645;
+        }
+        
+        h2 {
+            font-size: x-large;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            width: 60%;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
-        <p>Start Bootstrap can help you build better using </p>
-    </div>
-    <div>
-
-    </div>
+    <main>
+        <section class="principal">
+            <h1>YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES</h1>
+            <hr class="principal__hr">
+            <p>
+                Start Bootstrap can help you build better using the Bootstrap CSS framework!<br>
+                Just download your template and start going, no strings attached!
+            </p>
+            <button class="mas">FIND OUT MORE</button>
+        </section>
+        <section class="detalles">
+            <h2>We've got what you need!</h2>
+            <hr>
+            <p>
+                Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download and easy 
+                to use. No strings attached!
+            </p>
+            <button class="empezar">GET STARTED!</button>
+        </section>
+    </main>
 </body>
 </html>
