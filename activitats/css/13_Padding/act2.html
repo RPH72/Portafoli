@@ -6,7 +6,80 @@
     <title>Document</title>
     <style>
         body {
+            background-color: white;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+            height: 100vh;
+            margin: auto;
+        }
+        header {
+            width: 100%;
+            height: 2em;
+            background-color: #ffe01b;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        main {
+            width: 70%;
+        }
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: lighter;
+        }
+        .descripcion {
+            color: rgb(82, 82, 82);
+        }
+        .precio {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(113, 112, 112);
+        }
+        .dolares {
+            font-weight: bold;
+            font-size: 2rem;
+            color: black;
+        }
+        .compra {
+            padding: 0.8rem 3.5rem;
+            border: transparent;
+            color: white;
+            background-color: #007c89;
+            font-weight: bold;
+            font-size: 14px;
+            &:hover {
+                background-color: rgb(0, 96, 107);
+                cursor: pointer;
+            }
+        }
+        .descripcion {
+            margin-bottom: 0.5rem;
+            color: rgb(82, 82, 82);
+        }
+        section {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        section p {
+            margin: 0;
+            padding: 0;
+            color: rgb(113, 112, 112);
+        }
+        img {
+            height: 1rem;
+        }
+        footer {
+            margin-top: 1rem;
+            width: 70%;
+        }
+        .contactos, footer p {
+            color: rgb(1, 97, 107);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -31,10 +104,39 @@
             ¿Cuántos contactos tienes?
         </p>
         <button class="compra">Compra ahora</button>
-        <p class="contenido">
+        <p class="descripcion">
             Todo lo incluido en el plan Essentials, más: <br>
-            
         </p>
+        <section>
+            <img src="img/tick.png" alt="Tick">
+            <p>
+                Creador de recorridos del cliente + Puntos de ramificación
+            </p>
+        </section>
+        <section>
+            <img src="img/tick.png" alt="Tick">
+            <p>
+                Optimización de la hora de envio
+            </p>
+        </section>
+        <section>
+            <img src="img/tick.png" alt="Tick">
+            <p>
+                Redireccionamiento conductual
+            </p>
+        </section>
+        <section>
+            <img src="img/tick.png" alt="Tick">
+            <p>
+                Plantillas personalizadas
+            </p>
+        </section>
+        <section>
+            <img src="img/tick.png" alt="Tick">
+            <p>
+                Contenido dinámico
+            </p>
+        </section>
     </main>
     <footer>
         <p>Acerca de Standard</p>
