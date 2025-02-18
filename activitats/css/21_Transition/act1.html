@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+            &:focus {
+                border-color: turquoise;
+                box-shadow: 0 0 10px turquoise;;
+                transform: scale(1.10);
+            }
+        }
+        button {
+            padding: 1rem 2rem;
+            background-color: aquamarine;
+            transition-duration: 1s;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <label>Nombre <br><input type="text" name="nombre"></label><br><br>
+    <label>Teléfono <br><input type="number" name="telefono"></label><br><br>
+    <button type="submit">Enviar</button>
+</body>
+</html>
