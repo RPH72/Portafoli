@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cartel {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            max-width: 20%;
+            background: gainsboro;
+            border: 2px solid black;
+            border-radius: 14px;
+            opacity: 0;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: animacion-aparicion 1s ease-in 2s forwards;
+        }
+        .titulo {
+            font-size: large;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            margin-top: 5px;
+        }
+        .texto {
+            font-size: small;
+            color: rgb(30, 30, 30);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .botones {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            margin: 5px;
+            color: black;
+            border-radius: 1rem;
+            border: 1px solid black;
+            display: inline;
+        }
+        .aceptar {
+            color: white;
+            background-color: green;
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(0, 110, 0);
+            }
+        }
+        .opciones {
+            background-color: white;
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(240, 240, 240);
+            }
+        }
+        @keyframes animacion-aparicion {
+            from { 
+                opacity: 0; 
+                transform: translate(-50%, -40%); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translate(-50%, -50%); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cartel">
+        <p class="titulo">Política de cookies</p>
+        <p class="texto">
+            Utilizamos cookies para mejorar su experiencia de navegación,
+            ofrecer anuncios o contenidos personalizados y analizar nuestro tráfico.
+            Al hacer clic en "Aceptar", usted acepta nuestro uso de
+            cookies.
+        </p>
+        <div class="botones">
+            <button class="aceptar">Aceptar</button>
+            <button class="opciones">Opciones</button>
+        </div>
+    </div>
+</body>
+</html>

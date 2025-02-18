@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .base {    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+            border-radius: 50%;
+            background-color: gray;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .agujahoras, .agujaminutos, .agujasegundos {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: bottom;
+            background-color: black;
+            border-radius: 5px;
+        }
+        .agujahoras {
+            width: 6px;
+            height: 80px;
+            transform: translateX(-50%) rotate(0deg);
+            animation: rotar 43200s linear infinite;
+        }
+        .agujaminutos {
+            width: 4px;
+            height: 120px;
+            transform: translateX(-50%) rotate(0deg);
+            animation: rotar 3600s linear infinite;
+        }
+        .agujasegundos {
+            width: 2px;
+            height: 140px;
+            background-color: red;
+            transform: translateX(-50%) rotate(0deg);
+            animation: rotar 60s linear infinite;
+        }
+        @keyframes rotar {
+            from {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            to {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="base">
+        <div class="agujahoras"></div>
+        <div class="agujaminutos"></div>
+        <div class="agujasegundos"></div>
+    </div>
+</body>
+</html>

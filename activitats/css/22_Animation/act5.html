@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader {
+            background-color: azure;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid black;
+            border-top: 2px solid salmon;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: loading 1s linear infinite;
+        }
+        @keyframes loading {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
