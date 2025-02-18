@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .sol {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+        }
+        .luna {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: gray;
+            animation-name: animacion-eclipse;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        @keyframes animacion-eclipse {
+            0% {
+                transform: translateX(400px);
+            }
+            25% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-400px);
+            }
+            75% {
+                transform: translateX(0px);
+            }
+            100% {
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="sol"></div>
+        <div class="luna"></div>
+    </div>
+</body>
+</html>
