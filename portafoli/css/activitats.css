@@ -1,0 +1,62 @@
+.activitats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.columna {
+    width: 30%;
+    background-color: #DBC1AA;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    h2 {
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+details {
+    margin-bottom: 5px;
+    padding: 10px;
+    summary {
+        font-weight: bold;
+        font-size: 16px;
+        cursor: default;
+        padding: 10px;
+        background-color: #451A62;
+        color: blanchedalmond;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+        &::marker {
+            display: none;
+        }
+        &::after {
+            content: "+";
+            font-weight: bold;
+        }
+        details[open] &::after {
+            content: "-";
+            font-weight: bold;
+        }
+        &:hover {
+            background-color: #5c2680;
+            transform: scale(1.01);
+        }
+    }
+    ol {
+        list-style: none;
+        font-family: 'Lato';
+        li {
+            a{
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
