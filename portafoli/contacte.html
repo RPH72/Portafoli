@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacte</title>
     <link rel="stylesheet" href="../portafoli/css/style.css">
+    <link rel="stylesheet" href="../portafoli/css/contacte.css">
 </head>
 <body>
     <header>
@@ -19,12 +20,15 @@
     </header>
     <main>
         <h1>Contacte</h1>
-        <form>
-            
+        <form action="mailto:spla1@inscaparrella.cat">
+            <label>Nom: <input type="text" name="nom" required></label>
+            <label>Correu: <input type="email" name="correu" required></label>
+            <label>Missatge: <textarea name="missatge" required></textarea></label>
+            <button type="submit">Enviar</button>
         </form>
     </main>
     <footer>
-        <p>&copy; 2025 - Sergi Pla &emsp; | &emsp; </p>
+        <p>&copy; 2025 - Sergi Pla &emsp; | &emsp; <a class="contacte" href="contacte.html">Contacte: </a></p>
         <a href="https://www.linkedin.com/in/sergi-p-b716a22ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="../portafoli/images/linkedinlogo.png" alt="LinkedIn"></a>
     </footer>
 </body>

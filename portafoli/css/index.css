@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#principal {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    hr {
+        width: 30%;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        color: black;
+    }
+    img {
+        width: auto;
+        height: 50%;
+        margin-top: 20px;
+    }
+    .anar-estudis {
+        margin-top: 50px;
+        font-size: x-large;
+        text-decoration: none;
+        color: #222222;
+        background-color: #DBC1AA;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #222222;
+        &:hover{
+            cursor: default;
+            background-color: rgb(199, 173, 150);
+        }
+    }
+}
+
+#estudis {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBC1AA;
+    padding: 20px;
+    h2 {
+        font-family: 'Lato-Bold';
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    table {
+        width: auto;
+        border-collapse: collapse;
+        background-color: rgb(250, 241, 253);
+        color: #222222;
+        border-radius: 10px;
+        overflow: hidden;
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #451A62;
+            color: rgb(250, 241, 253);
+        }
+    }
+    .anar-principal{
+        margin-bottom: 50px;
+        font-size: x-large;
+        text-decoration: none;
+        color: #222222;
+        background-color: #DDC9B4;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #222222;
+        &:hover{
+            cursor: default;
+            background-color: rgb(241, 221, 200);
+        }
+    }
+}
+
