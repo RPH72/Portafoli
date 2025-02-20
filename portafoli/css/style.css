@@ -63,7 +63,8 @@ main {
 }
 
 footer {
-    background-color: #DBC1AA;
+    border-top: 1px solid #222222;
+    background-color: #DCC4AF;
     text-align: center;
     width: 100%;
     display: flex;
@@ -72,6 +73,10 @@ footer {
     position: relative;
     bottom: 0;
     gap: 10px;
+    .contacte {
+        color: #222222;
+        text-decoration: none;
+    }
     img {
         height: 1rem;
         margin-top: 4px;
